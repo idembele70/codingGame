@@ -1,5 +1,5 @@
 let str = "", result = '';
-function CaractereEnBinaire(caratere = '%') {
+function CaractereEnBinaire(caratere = 'Ch') {
     for (const i of caratere) {
         str += caratere.charCodeAt(i).toString(2);
         console.log(str);
@@ -13,4 +13,5 @@ function CaractereEnBinaire(caratere = '%') {
 }
 console.log(CaractereEnBinaire());
 
-console.log("%".charCodeAt().toString(2)); 
+console.log("%".charCodeAt().toString(2));  
+ 
