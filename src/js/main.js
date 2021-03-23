@@ -1,7 +1,7 @@
 let str = "", res = '';
-function CaractereEnBinaire(caratere = 'Ch') {
-    for (const i of caratere) {
-        str += caratere.charCodeAt(i).toString(2);
+function CaractereEnBinaire(char = 'Ch') {
+    for (const i of char) {
+        str += char.charCodeAt(i).toString(2);
         console.log(str);
     }
     const reg0 = /0{1,}|1{1,}/gi;
