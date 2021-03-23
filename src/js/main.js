@@ -1,4 +1,4 @@
-let str = "", result = '';
+let str = "", res = '';
 function CaractereEnBinaire(caratere = 'Ch') {
     for (const i of caratere) {
         str += caratere.charCodeAt(i).toString(2);
@@ -8,10 +8,9 @@ function CaractereEnBinaire(caratere = 'Ch') {
     str = str.match(reg0).map(x => {
         return x[0] == 1 ? "0 " + "0".repeat(x.length) : "00 " + "0".repeat(x.length)
     }).join(' ');
-    result+= str;
-    return result
+    res+= str;
+    return res
 }
 console.log(CaractereEnBinaire());
-
 console.log("%".charCodeAt().toString(2));  
  
