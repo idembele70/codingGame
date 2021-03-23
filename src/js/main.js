@@ -20,22 +20,10 @@ console.log("%".charCodeAt().toString(2));
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-// reverse Mode
- const L = parseInt(readline());
- const M = parseInt(readline());
- const N = parseInt(readline());
- const tabsLineOne = [], tabsLineTwo = [];
- tabsLineOne.push(L);
- tabsLineTwo.push(L);
- let valL = L; let valM = L;
- for(let i = 1; i < N; i++){
-     valL+=M;
-     tabsLineOne.push(valL);
-     valM/=M;
-     tabsLineTwo.push(valM);
- }
- 
- console.log(tabsLineOne.join(' '));
- console.log(tabsLineTwo.join(' '));
- 
+
+ r=readline
+ n=parseInt(r())
+ c=n
+ for (i=0;i<n;i++){
+ s=r();if(s.match(/-<|>-/g));else c--}print(c*100/n+'%')
 
