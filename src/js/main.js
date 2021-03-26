@@ -21,9 +21,10 @@ console.log("%".charCodeAt().toString(2));
  * the standard input according to the problem statement.
  **/
 
- r=readline
- n=parseInt(r())
- c=n
- for (i=0;i<n;i++){
- s=r();if(s.match(/-<|>-/g));else c--}print(c*100/n+'%')
 
+
+
+
+s=0
+i=0
+while(i<n){s+=Math.pow(2,i);i++}print(s)
