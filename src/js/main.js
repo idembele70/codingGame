@@ -23,8 +23,12 @@ console.log("%".charCodeAt().toString(2));
 
 
 
-
-
-s=0
-i=0
-while(i<n){s+=Math.pow(2,i);i++}print(s)
+let premier = false, biggest = 0;
+for (let index = 0; index < M; index++) {
+    if (M % i == 0){
+    verify = true
+    }
+}
+if (biggest < M && !verify) {
+    biggest = M;
+}
