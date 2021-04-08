@@ -50,3 +50,12 @@ function Encode(MESSAGE = "%") {
 
 Encode() */
 
+
+
+
+A.split('').forEach(
+    el => tabs.push(el.charCodeAt(0)));
+B.split('').forEach(
+    el => tabs2.push(el.charCodeAt(0)));
+
+print(tabs.join('') >= tabs2.map(x => x+1).join(''))
