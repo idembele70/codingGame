@@ -51,11 +51,8 @@ function Encode(MESSAGE = "%") {
 Encode() */
 
 
-
-
-A.split('').forEach(
-    el => tabs.push(el.charCodeAt(0)));
-B.split('').forEach(
-    el => tabs2.push(el.charCodeAt(0)));
-
-print(tabs.join('') >= tabs2.map(x => x+1).join(''))
+s=readline()
+r=0
+e=s.length
+for(i=0;i<e;i++)r+=s.charCodeAt(i)
+print(Math.floor(r/e))
