@@ -51,8 +51,9 @@ function Encode(MESSAGE = "%") {
 Encode() */
 
 
-s=readline()
-r=0
-e=s.length
-for(i=0;i<e;i++)r+=s.charCodeAt(i)
-print(Math.floor(r/e))
+r=readline
+parseInt(r())
+z=r().split(' ')
+z.sort()
+print(z.reverse().reduce((a,i) =>a+=i)!=0?z.join``:0)
+
