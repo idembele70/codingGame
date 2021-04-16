@@ -24,36 +24,18 @@ res += str;
 console.log(res);
 console.log('%'.charAt(0).toString(2)); */
 
-
-
-/*
-function Encode(MESSAGE = "%") {
-    var res = "";
-    var pre = -1;
-
-    for (let i = 0; i < MESSAGE.length; i++) {
-        for (let j = 6; j >= 0; j--) {
-            const bit = MESSAGE.charCodeAt(i) >> j & 1;
-            console.log(bit);
-            if (bit !== pre) {
-                if (-1 !== pre) {
-                    res += " ";
-                }
-                res+= 1 == bit ? "0 " : "00 ";
-                pre = bit;
-            }
-            res+="0"
+const Message = '%'
+let res = "";
+let pre = -1;
+const myBit = Message.charCodeAt(0).toString(2).padStart(7, 0);
+for (let i = 6; i >= 0; i--) {
+    const bit = Message.charCodeAt(0) >> i & 1;
+    if (bit != pre) {
+        if (-1 !== pre) {
+            res += " ";
         }
-    }
-    console.log(res);
+        res += 1 == bit ? "0 " : "00 ";
+        pre = bit
+        console.log('res', res);
+    } res +=0
 }
-
-Encode() */
-
-
-r=readline
-parseInt(r())
-z=r().split(' ')
-z.sort()
-print(z.reverse().reduce((a,i) =>a+=i)!=0?z.join``:0)
-
