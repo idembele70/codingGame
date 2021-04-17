@@ -36,6 +36,11 @@ for (let i = 6; i >= 0; i--) {
         }
         res += 1 == bit ? "0 " : "00 ";
         pre = bit
-        console.log('res', res);
     } res +=0
 }
+let nbr = 25;
+let nbr2 = (25).toString(2);
+console.log(nbr2);
+console.log(parseInt("01100",2));
+console.log(nbr >> 1); 
+
