@@ -1,20 +1,5 @@
-const  N =3
-const Q = 11
-/* 
-Extensions :  wav audio/x-wav
-Extensions :  mp3 audio/mpeg
-Extensions :  pdf application/pdf
- */
-/* 
-a             => UNKNOWN
-a.wav         => audio/ x-wav
-b.wav.tmp     => UNKNOWN
-test.vmp3     => UNKNOWN
-pdf           => UNKNOWN
-.pdf          => pdf
-mp3           => UNKNOWN
-report..pdf   => pdf
-defaultwav    => UNKNOWN
-.mp3.         => UNKNOWN
-final.        => UNKNOWN
-*/
+const N = parseInt(readline());
+for (let i = 0; i < N; i++) {
+    const num = parseInt(readline());
+    print(parseInt(num.toString(2).replace(/1/,0),2))
+}
